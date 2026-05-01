@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { ChatInterface } from '@/components/chat/ChatInterface';
+import Navigation from '@/components/Navigation';
 
 export const metadata: Metadata = {
   title: 'Ask ElectIQ | Your Civic AI Guide',
@@ -9,9 +10,11 @@ export const metadata: Metadata = {
 
 export default function ChatPage() {
   return (
-    <main className="min-h-[calc(100vh-64px)] bg-[var(--bg-secondary)] overflow-hidden relative">
-      {/* Page hero banner */}
-      <div className="relative w-full h-40 sm:h-48">
+    <>
+      <Navigation />
+      <main className="min-h-[calc(100vh-64px)] bg-[var(--bg-secondary)] overflow-hidden relative">
+        {/* Page hero banner */}
+        <div className="relative w-full h-40 sm:h-48">
         <Image
           src="/feature-chat.png"
           alt="AI-powered civic assistant"
@@ -32,5 +35,6 @@ export default function ChatPage() {
         <ChatInterface />
       </div>
     </main>
+    </>
   );
 }

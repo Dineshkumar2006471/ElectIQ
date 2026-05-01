@@ -27,7 +27,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold leading-tight tracking-tight text-[var(--text-primary)]"
+          className="text-[4vw] sm:text-[3.5vw] md:text-4xl lg:text-[3.5rem] font-extrabold leading-tight tracking-tight text-[var(--text-primary)] whitespace-nowrap"
         >
           Understand Every Vote. <span className="text-[var(--accent)]">Exercise Every Right.</span>
         </motion.h1>
